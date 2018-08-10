@@ -18,6 +18,7 @@ Starting Up the Server
     * Or, you can click on docker-compose.yml in PyCharm, right click and choose "run"
 * Browse to https://localhost.www.fool.com/ and you should see your project via https
 * To stop the server, hit ctrl-c in the terminal if you started it that way, or click the Stop button in PyCharm.
+    * If you are making changes to your server, you will want to do `docker-compose down` after you stop the server to ensure it gets rebuilt when you start it again.
 
 
 Customization
