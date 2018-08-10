@@ -12,6 +12,7 @@ On the Mac
 * Authenticate via touch ID or your password when asked to do so
 * Close Keychain Access
 * From the command line, in this project's directory, type `docker-compose up`
+    * Or, you can click on docker-compose.yml in PyCharm, right click and choose "run"
 * Start your local Project server on port 8000
 * Browse to https://localhost.www.fool.com/ and you should see your project via https
 
