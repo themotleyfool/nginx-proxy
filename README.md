@@ -1,3 +1,8 @@
+SSL NGINX Local Proxy
+=====================
+
+This repo has a container setup so you can run a full-SSL local proxy to your development server. Useful for developing service workers and AMP that require SSL.
+
 How to use this repo
 ====================
 
