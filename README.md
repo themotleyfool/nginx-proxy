@@ -19,7 +19,7 @@ First Time Only
 Starting Up the Server
 ----------------------
 * Start your local python server on http://localhost.www.fool.com:8000 however you normally do
-    * Edit /etc/hosts to map localhost.www.fool.com to localhost if you haven't already
+    * Edit /etc/hosts to map `localhost.www.fool.com` to localhost if you haven't already
 * From the command line, in this project's directory, type `docker-compose up`
     * Or, you can click on docker-compose.yml in PyCharm, right click and choose "run"
 * Browse to https://localhost.www.fool.com/ and you should see your project via https
