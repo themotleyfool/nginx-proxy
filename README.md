@@ -15,6 +15,7 @@ On the Mac
     * Or, you can click on docker-compose.yml in PyCharm, right click and choose "run"
 * Start your local Project server on port 8000
 * Browse to https://localhost.www.fool.com/ and you should see your project via https
+* To stop the server, hit ctrl-c in the terminal if you started it that way, or click the Stop button in PyCharm.
 
 
 Customization
