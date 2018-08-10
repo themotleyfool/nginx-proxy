@@ -6,6 +6,8 @@ services:
       - ./config/nginx/nginx-cache-control-headers.conf:/etc/nginx/nginx-cache-control-headers.conf:ro
       - ./config/nginx/nginx-security-headers.conf:/etc/nginx/nginx-security-headers.conf:ro
       - ./config/nginx/nginx-ssl-options.conf:/etc/nginx/nginx-ssl-options.conf:ro
+      - ./config/nginx/nginx-deny-invisible-file-access.conf:/etc/nginx/nginx-deny-invisible-file-access.conf:ro
+      - ./config/nginx/nginx-proxy-to-local.conf:/etc/nginx/nginx-proxy-to-local.conf:ro
       - ./config/nginx/localhost.crt:/etc/nginx/localhost.crt:ro
       - ./config/nginx/localhost.key:/etc/nginx/localhost.key:ro
       - ./config/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
