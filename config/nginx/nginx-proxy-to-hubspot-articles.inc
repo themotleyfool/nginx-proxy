@@ -1,0 +1,14 @@
+proxy_redirect http://articles.theascent.com/blog /the-ascent/harticles;
+proxy_set_header Host articles.theascent.com;
+proxy_set_header X-Forwarded-Host articles.theascent.com;
+proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+proxy_set_header X-Forwarded-Proto $scheme;
+#proxy_set_header X-HubSpot-Trust-Forwarded-For true;
+proxy_set_header Accept-Encoding "";
+sub_filter_once off;
+sub_filter 'articles.theascent.com/blog' '$host/the-ascent/harticles';
+sub_filter 'articles.theascent.com' $host;
+sub_filter '/_hcms/' '/the-ascent/hub/_hcms/';
+sub_filter '/hs/' '/the-ascent/hub/hs/';
+sub_filter '/hubfs/' '/the-ascent/hub/hubfs/';
+sub_filter '/hs-fs/' '/the-ascent/hub/hs-fs/';
