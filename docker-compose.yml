@@ -10,10 +10,9 @@ services:
       - ./config/nginx/nginx-deny-invisible-file-access.conf:/etc/nginx/nginx-deny-invisible-file-access.conf:ro
       - ./config/nginx/nginx-proxy-to-hubspot-articles.inc:/etc/nginx/nginx-proxy-to-hubspot-articles.inc:ro
       - ./config/nginx/nginx-proxy-to-local.conf:/etc/nginx/nginx-proxy-to-local.conf:ro
-      - ./config/nginx/nginx-proxy-to-hubspot-ascent.conf:/etc/nginx/nginx-proxy-to-hubspot-ascent.conf:ro
       - ./config/nginx/nginx-proxy-to-hubspot-ascent-blog.conf:/etc/nginx/nginx-proxy-to-hubspot-ascent-blog.conf:ro
       - ./config/nginx/localhost.crt:/etc/nginx/localhost.crt:ro
-      - ./config/nginx/ssl/rootCA.pem:/etc/nginx/rootca.pem:ro
+      - ./config/nginx/rootCA.pem:/etc/nginx/rootca.pem:ro
       - ./config/nginx/localhost.key:/etc/nginx/localhost.key:ro
       - ./config/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
     ports:
