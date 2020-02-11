@@ -35,6 +35,7 @@ Troubleshooting
 ---------------
 * If you see a "This certificate authority is not trusted" error, you need to do the "Get Info/Trust/Always Trust" steps above
 * If you see "502 Bad Gateway" that means your development python server is not running on port 8000
+* If you see "This certificate has expired" errors, then you can run the "regen-cert.sh" script in the ssl dir to make a new server cert.
 
 Customization
 --------------
