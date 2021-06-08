@@ -13,4 +13,4 @@ OU=US Tech
 CN=localhost.www.fool.com
 
 [ req_ext ]
-subjectAltName=localhost.www.millionacres.com
+subjectAltName=localhost.www.millionacres.com,local.fool.com
