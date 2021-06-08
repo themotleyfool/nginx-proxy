@@ -7,3 +7,4 @@ subjectAltName = @alt_names
 DNS.1 = localhost
 DNS.2 = localhost.www.fool.com
 DNS.3 = localhost.affiliates.fool.com
+DNS.4 = local.fool.com
