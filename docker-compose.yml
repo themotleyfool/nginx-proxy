@@ -2,6 +2,8 @@ version: "3"
 services:
   nginx:
     image: nginx:alpine
+    extra_hosts:
+      host.docker.internal: host-gateway
     volumes:
       - ./config/nginx/nginx-cache-control-headers.conf:/etc/nginx/nginx-cache-control-headers.conf:ro
       - ./config/nginx/nginx-security-headers.conf:/etc/nginx/nginx-security-headers.conf:ro

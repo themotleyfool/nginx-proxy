@@ -1,13 +1,16 @@
-[req]
+[ req ]
 default_bits = 2048
 prompt = no
 default_md = sha256
 distinguished_name = dn
 
-[dn]
+[ dn ]
 C=US
 ST=CO
 L=Lakewood
 O=The Motley Fool
 OU=US Tech
-CN = localhost.www.fool.com
+CN=localhost.www.fool.com
+
+[ req_ext ]
+subjectAltName=localhost.www.millionacres.com,local.fool.com
